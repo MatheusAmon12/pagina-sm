@@ -1,0 +1,338 @@
+@import url("https://fonts.googleapis.com/css2?family=Michroma&family=Palanquin:wght@400;600;700&display=swap");
+@font-face {
+  font-family: "Amsterdam";
+  src: url("../fonts/amsterdam-two-ttf.ttf") format("truetype");
+}
+:root {
+  --color-primary: #631d76;
+  --color-secondary: #D782BA;
+  --color-tertiary: #E18AD4;
+  --color-complementary: #F7F7F9;
+  --color-complementary-2: #050505;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Palanquin", sans-serif;
+  font-size: 16px;
+}
+body .header {
+  background-color: var(--color-complementary-2);
+  height: 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+  padding: 5px 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+body .header h1 {
+  font-family: "Michroma", sans-serif;
+  font-size: 0.8em;
+}
+body .header .button_menu {
+  background: none;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+body .header .menu {
+  position: absolute;
+  right: 0;
+  top: 40px;
+  list-style: none;
+}
+body .header .menu li {
+  text-align: center;
+}
+body .header .menu li:nth-child(odd) {
+  background-color: #050505;
+}
+body .header .menu li:nth-child(even) {
+  background-color: #121212;
+}
+body .header .menu li a {
+  display: block;
+  padding: 15px 60px;
+  text-decoration: none;
+  color: white;
+  font-size: 1.2em;
+}
+body .header .menu li a:active {
+  background-color: var(--color-primary);
+}
+body .header .menu li a:hover {
+  background-color: black;
+}
+body .container {
+  margin: 0 auto;
+  width: 85vw;
+}
+body .home {
+  height: 100vh;
+  background-image: url("../images/background_3.jpg");
+  background-attachment: fixed;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+body .home .container .contentHome {
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  height: 88.5vh;
+  display: flex;
+}
+body .home .container .contentHome .logo {
+  width: 100px;
+}
+body .home .container .contentHome .profile {
+  width: 200px;
+  border-radius: 50%;
+}
+body .home .container .contentHome p {
+  padding: 10px;
+  border-radius: 8px;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.3);
+  background-color: rgba(255, 255, 255, 0.65);
+  text-align: center;
+  color: black;
+  font-size: 1.15em;
+  font-weight: 600;
+  font-family: "Palanquin", sans-serif;
+  line-height: 30px;
+}
+body .home .container .contentHome p span {
+  font-size: 1.2em;
+  font-weight: 600;
+  color: var(--color-primary);
+}
+body .home .container .contentHome .social {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+body .home .container .contentHome .social .photoProfile {
+  margin-bottom: 15px;
+  width: 250px;
+  border-radius: 50%;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+}
+body .home .container .contentHome .social .socialIcons {
+  display: flex;
+}
+body .home .container .contentHome .social .socialIcons a:nth-child(2) {
+  margin: 0 20px;
+}
+body .home .container .contentHome .social .socialIcons a img {
+  width: 50px;
+  filter: drop-shadow(0 0 10px rgba(0, 0, 0, 0.5));
+}
+body .home .container .contentHome .buttonAction {
+  font-family: "Michroma", sans-serif;
+  font-weight: 400;
+  font-size: 1em;
+  border-radius: 8px;
+  border: none;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.7);
+  outline: none;
+  cursor: pointer;
+  background-color: #121212;
+  animation: buttonAnimate 1000ms infinite alternate-reverse ease-in-out;
+}
+body .home .container .contentHome .buttonAction:hover {
+  background-image: linear-gradient(to right, #DA22FF 0%, #9733EE 51%);
+}
+body .home .container .contentHome .buttonAction a {
+  display: block;
+  border-radius: 8px;
+  padding: 20px;
+  text-decoration: none;
+  color: white;
+}
+body .about {
+  background-color: white;
+}
+body .about .container .contentAbout {
+  padding-top: 50px;
+}
+body .about .container .contentAbout h2 {
+  font-size: 1.7em;
+  border-bottom: 1.5px solid var(--color-primary);
+  padding-bottom: 20px;
+}
+body .about .container .contentAbout p {
+  margin-top: 20px;
+  font-size: 1.2em;
+}
+body .about .container .contentAbout .centerImg {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 40px;
+}
+body .about .container .contentAbout .centerImg span {
+  margin-top: 40px;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+body .about .container .contentAbout .centerImg img {
+  width: 300px;
+  border: 1px solid var(--color-primary);
+  box-shadow: 0 5px 10px rgba(99, 29, 118, 0.3);
+  margin: 20px 0;
+}
+body .portfolio {
+  background-color: var(--color-primary);
+}
+body .portfolio .container {
+  padding-top: 50px;
+}
+body .portfolio .container .contentPortfolio {
+  padding-bottom: 40px;
+}
+body .portfolio .container .contentPortfolio .banner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #D782BA;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  border-radius: 8px;
+}
+body .portfolio .container .contentPortfolio .banner div {
+  display: flex;
+  justify-content: center;
+}
+body .portfolio .container .contentPortfolio .banner div p {
+  font-size: 0.9em;
+  color: var(--color-complementary);
+  width: 200px;
+  padding-left: 20px;
+}
+body .portfolio .container .contentPortfolio .banner img {
+  border-left: 1px solid white;
+  padding: 20px 20px 0 25px;
+  height: 200px;
+  filter: drop-shadow(0 0 10px rgba(0, 0, 0, 0.3));
+}
+body .portfolio .container .contentPortfolio > p {
+  margin-top: 40px;
+  color: var(--color-complementary);
+  font-size: 1.2em;
+}
+body .plans {
+  background-color: white;
+  padding: 40px 0;
+}
+body .plans .container p {
+  font-size: 1.2em;
+}
+body .plans .container p:first-child {
+  margin-bottom: 10px;
+}
+body .plans .container .prices {
+  margin-top: 40px;
+  display: flex;
+  flex-direction: column;
+}
+body .plans .container .prices .price {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-radius: 40px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  background-color: #d782ba;
+  background-image: linear-gradient(19deg, #d782ba 0%, #631d76 100%);
+}
+body .plans .container .prices .price:nth-child(2) {
+  margin: 40px 0;
+}
+body .plans .container .prices .price button {
+  cursor: pointer;
+  background: none;
+  border: none;
+  text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+body .plans .container .prices .price button img {
+  width: 30px;
+}
+body .plans .container .prices .price span {
+  color: white;
+  font-family: "Amsterdam", sans-serif;
+  font-size: 1.5em;
+}
+body .plans .container .prices .price .value {
+  font-family: "Palanquin", sans-serif;
+  font-size: 1.5em;
+}
+body .plans .container .prices .price img {
+  width: 150px;
+  filter: drop-shadow(0 0 10px rgba(0, 0, 0, 0.5));
+}
+body .plans .container .prices .price .list {
+  margin-top: 10px;
+  order: 2;
+  width: 80%;
+}
+body .plans .container .prices .price .list ul {
+  list-style: circle;
+  color: white;
+  font-size: 1em;
+  line-height: 22px;
+}
+body .plans .container .prices .buttonAction {
+  margin-top: 40px;
+  font-family: "Michroma", sans-serif;
+  font-weight: 400;
+  font-size: 1em;
+  border-radius: 8px;
+  border: none;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.7);
+  outline: none;
+  cursor: pointer;
+  background-color: var(--color-primary);
+  animation: buttonAnimate 1000ms infinite alternate-reverse ease-in-out;
+}
+body .plans .container .prices .buttonAction:hover {
+  background-image: linear-gradient(to right, #DA22FF 0%, #9733EE 51%);
+}
+body .plans .container .prices .buttonAction a {
+  display: block;
+  border-radius: 8px;
+  padding: 20px;
+  text-decoration: none;
+  color: white;
+}
+body .footer {
+  background-color: var(--color-tertiary);
+  line-height: 15px;
+  padding: 5px 10px;
+}
+body .footer span {
+  display: block;
+  text-align: center;
+}
+
+.not_visible {
+  display: none;
+}
+
+.visible {
+  display: block;
+}
+
+@keyframes buttonAnimate {
+  from {
+    scale: 1;
+  }
+  to {
+    scale: 1.1;
+  }
+}/*# sourceMappingURL=main.css.map */
