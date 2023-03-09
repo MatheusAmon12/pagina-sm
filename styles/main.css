@@ -75,7 +75,7 @@ body .container {
 }
 body .home {
   height: 100vh;
-  background-image: url("../images/background_3.jpg");
+  background-image: url("../images/background.jpg");
   background-attachment: fixed;
   background-size: cover;
   background-repeat: no-repeat;
