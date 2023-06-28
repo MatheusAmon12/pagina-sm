@@ -197,6 +197,8 @@ body .portfolio .container .contentPortfolio {
   padding-bottom: 40px;
 }
 body .portfolio .container .contentPortfolio .banner {
+  max-width: 400px;
+  margin: 0 auto;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -236,6 +238,8 @@ body .plans .container p:first-child {
   margin-bottom: 10px;
 }
 body .plans .container .prices {
+  max-width: 500px;
+  margin: 0 auto;
   margin-top: 40px;
   display: flex;
   flex-direction: column;
@@ -273,7 +277,7 @@ body .plans .container .prices .price .value {
   font-size: 1.5em;
 }
 body .plans .container .prices .price img {
-  width: 150px;
+  width: 250px;
   filter: drop-shadow(0 0 10px rgba(0, 0, 0, 0.5));
 }
 body .plans .container .prices .price .list {
@@ -311,9 +315,11 @@ body .plans .container .prices .buttonAction a {
   color: white;
 }
 body .footer {
-  background-color: var(--color-tertiary);
-  line-height: 15px;
-  padding: 5px 10px;
+  margin-top: 100px;
+  background-color: var(--color-primary);
+  color: var(--color-complementary);
+  line-height: 40px;
+  padding: 90px;
 }
 body .footer span {
   display: block;
