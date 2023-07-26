@@ -227,24 +227,24 @@ body .portfolio .container .contentPortfolio > p {
   color: var(--color-complementary);
   font-size: 1.2em;
 }
-body .plans {
+body .services {
   background-color: white;
   padding: 40px 0;
 }
-body .plans .container p {
+body .services .container p {
   font-size: 1.2em;
 }
-body .plans .container p:first-child {
+body .services .container p:first-child {
   margin-bottom: 10px;
 }
-body .plans .container .prices {
+body .services .container .prices {
   max-width: 500px;
   margin: 0 auto;
   margin-top: 40px;
   display: flex;
   flex-direction: column;
 }
-body .plans .container .prices .price {
+body .services .container .prices .price {
   padding: 20px;
   display: flex;
   flex-direction: column;
@@ -255,43 +255,46 @@ body .plans .container .prices .price {
   background-color: #d782ba;
   background-image: linear-gradient(19deg, #d782ba 0%, #631d76 100%);
 }
-body .plans .container .prices .price:nth-child(2) {
+body .services .container .prices .price:nth-child(2) {
   margin: 40px 0;
 }
-body .plans .container .prices .price button {
+body .services .container .prices .price button {
   cursor: pointer;
   background: none;
   border: none;
   text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
-body .plans .container .prices .price button img {
+body .services .container .prices .price button img {
   width: 30px;
 }
-body .plans .container .prices .price span {
+body .services .container .prices .price span {
   color: white;
   font-family: "Amsterdam", sans-serif;
   font-size: 1.5em;
 }
-body .plans .container .prices .price .value {
+body .services .container .prices .price .value {
   font-family: "Palanquin", sans-serif;
   font-size: 1.5em;
 }
-body .plans .container .prices .price img {
+body .services .container .prices .price img {
   width: 250px;
   filter: drop-shadow(0 0 10px rgba(0, 0, 0, 0.5));
 }
-body .plans .container .prices .price .list {
+body .services .container .prices .price .list {
   margin-top: 10px;
   order: 2;
   width: 80%;
 }
-body .plans .container .prices .price .list ul {
+body .services .container .prices .price .list ul {
   list-style: circle;
   color: white;
   font-size: 1em;
   line-height: 22px;
 }
-body .plans .container .prices .buttonAction {
+body .services .container .prices .price .list ul li {
+  margin-bottom: 10px;
+}
+body .services .container .prices .buttonAction {
   margin-top: 40px;
   font-family: "Michroma", sans-serif;
   font-weight: 400;
@@ -304,10 +307,10 @@ body .plans .container .prices .buttonAction {
   background-color: var(--color-primary);
   animation: buttonAnimate 1000ms infinite alternate-reverse ease-in-out;
 }
-body .plans .container .prices .buttonAction:hover {
+body .services .container .prices .buttonAction:hover {
   background-image: linear-gradient(to right, #DA22FF 0%, #9733EE 51%);
 }
-body .plans .container .prices .buttonAction a {
+body .services .container .prices .buttonAction a {
   display: block;
   border-radius: 8px;
   padding: 20px;

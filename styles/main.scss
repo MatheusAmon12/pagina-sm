@@ -4,8 +4,6 @@
     font-family: "Amsterdam";
     src: url("../fonts/amsterdam-two-ttf.ttf") format('truetype');
 }
-//
-
 
 :root{
     --color-primary: #631d76;
@@ -26,7 +24,6 @@ body{
         family: 'Palanquin', sans-serif;
         size: 16px;
     };
-
 
     .header{ 
         background-color: var(--color-complementary-2);
@@ -196,9 +193,6 @@ body{
         }
     }
 
-
-
-
     .about{
         background-color: white;
         .container{
@@ -295,7 +289,7 @@ body{
         }
     }
 
-    .plans{
+    .services{
         background-color: white;
         padding: 40px 0;
         .container{
@@ -368,6 +362,10 @@ body{
                             color: white;
                             font-size: 1em;
                             line-height: 22px;
+
+                            li{
+                                margin-bottom: 10px;
+                            }
                         }       
                     }
                 }
@@ -404,8 +402,6 @@ body{
             }
         }
     }
-
-
 
     .footer{
         margin-top: 100px;
